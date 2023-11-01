@@ -364,12 +364,6 @@ body.dark-theme {
   row-gap: 3.5rem;
 }
 
-.skills__title {
-  font-size: var(--h3-font-size);
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
 .skills__box {
   display: flex;
   justify-content: center;
@@ -410,12 +404,6 @@ body.dark-theme {
   row-gap: 3.5rem;
 }
 
-.resume__title {
-  font-size: var(--h3-font-size);
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
 .resume__data {
   display: flex;
   align-content: flex-start;
@@ -444,7 +432,38 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
 }
 
-/* Hide and show projects & skills */
+/*=============== ANSWERS ===============*/
+.answers__content {
+  row-gap: 3.5rem;
+}
+
+.answers__data {
+  display: flex;
+  align-content: flex-start;
+  row-gap: 1rem;
+  justify-content: center;
+  column-gap: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.answers__data i {
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+.answers__question {
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.answers__answer {
+  font-size: var(--smaller-font-size);
+}
+
+/* Hide and show */
 .filters [data-content] {
   display: none;
 }
@@ -507,12 +526,12 @@ body.dark-theme {
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .projects__content {
-    grid-template-columns: 332px;
+    grid-template-columns: 400px;
     justify-content: center;
   }
 
   .filters__content {
-    width: 332px;
+    width: 400px;
     margin: 3rem auto;
   }
 }
@@ -520,7 +539,7 @@ body.dark-theme {
 @media screen and (min-width: 776px) {
   .projects__content,
   .skills__content {
-    grid-template-columns: repeat(2, 332px);
+    grid-template-columns: repeat(2, 350px);
   }
 
   .skills__content {
